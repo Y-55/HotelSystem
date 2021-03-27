@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="700.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="890.0">
+         <children>
+            <Label text="Administer User" textFill="#ff5e36">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <JFXTextField promptText="Username" />
+            <JFXTextField promptText="Phone" />
+            <JFXTextField promptText="Address" />
+            <JFXTextField promptText="Email" />
+            <JFXTextField promptText="Password" />
+            <JFXButton graphicTextGap="10.0" prefHeight="40.0" prefWidth="155.0" text="Create new" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="my-button" />
+                  <String fx:value="menu-button" />
+               </styleClass>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="PLUS" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <TableView prefHeight="321.0" prefWidth="834.0">
+         <columns>
+            <TableColumn prefWidth="110.0" text="User ID" />
+            <TableColumn prefWidth="120.0" text="Username" />
+            <TableColumn prefWidth="131.0" text="Phone" />
+            <TableColumn prefWidth="102.0" text="Address" />
+            <TableColumn prefWidth="117.0" text="Email" />
+            <TableColumn prefWidth="113.0" text="Password?" />
+         </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

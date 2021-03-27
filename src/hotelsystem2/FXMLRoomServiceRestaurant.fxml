@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="950.0" spacing="10.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelsystem2.FXMLRoomServiceRestaurantController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="890.0">
+         <children>
+            <Label text="Room Service" textFill="#ff5e36">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <JFXComboBox prefHeight="31.0" prefWidth="185.0" promptText="Service Type" />
+            <JFXTextField prefHeight="31.0" prefWidth="186.0" promptText="Phone" text="Description" />
+            <JFXButton prefHeight="40.0" prefWidth="171.0" styleClass="my-button" text="Create Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <TableView prefHeight="321.0" prefWidth="834.0">
+         <columns>
+            <TableColumn prefWidth="143.0" text="Service Type" />
+            <TableColumn prefWidth="144.0" text="Price" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Modify" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

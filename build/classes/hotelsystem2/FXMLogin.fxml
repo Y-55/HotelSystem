@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="700.0" maxWidth="1200.0" minHeight="700.0" minWidth="1200.0" prefHeight="700.0" prefWidth="1200.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelsystem2.FXMLoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" styleClass="board">
+         <children>
+            <VBox alignment="CENTER" prefHeight="460.0" prefWidth="320.0" styleClass="board-inside">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
+                  <VBox alignment="CENTER" prefHeight="281.0" prefWidth="270.0" spacing="30.0">
+                     <children>
+                        <JFXTextField fx:id="txtFUserName" focusColor="#eeeeee" promptText="Enter Your Username" styleClass="my-text-field" unFocusColor="#ff5e36">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtFPassWord" focusColor="WHITE" promptText="Enter Your Password" styleClass="my-text-field" unFocusColor="#ff5e36">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="btnLogin" onAction="#btnLoginAction" prefHeight="40.0" prefWidth="320.0" styleClass="my-button" stylesheets="@Style.css" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <Text fx:id="txtValidate" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="40.0" right="40.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="700.0" prefWidth="800.0">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="800.0">
+               <children>
+                  <ImageView fitHeight="700.0" fitWidth="800.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@login-image.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="117.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to our Hotel">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="117.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best service in the hole country. " wrappingWidth="261.0830078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="117.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To manage your reservations and services make your account now." wrappingWidth="540.0830078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="btnRegister" layoutX="117.0" layoutY="403.0" onAction="#btnRegisterAction" prefHeight="40.0" prefWidth="192.0" styleClass="my-button" text="Register" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

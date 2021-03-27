@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="950.0" spacing="10.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelsystem2.FXMLAdministerRoomsController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="890.0">
+            <children>
+                <Label text="Administer Rooms" textFill="#ff5e36">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+            <children>
+            <JFXTextField fx:id="txtFRoomNumber" focusColor="#ff5e36" promptText="Room Number" unFocusColor="BLACK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFRoomRate" focusColor="#ff5e36" promptText="Room Rate" unFocusColor="BLACK">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+                <JFXButton fx:id="btnCreateNewRoom" graphicTextGap="10.0" onAction="#btnCreateNewRoomAction" prefHeight="40.0" prefWidth="211.0" text="Create New Room" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="my-button" />
+                        <String fx:value="menu-button" />
+                    </styleClass>
+                    <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="PLUS" />
+                    </graphic>
+                </JFXButton>
+            </children>
+        </HBox>
+        <TableView prefHeight="381.0" prefWidth="890.0" styleClass="my-table">
+            <columns>
+                <TableColumn prefWidth="208.0" text="Room Number" />
+                <TableColumn prefWidth="205.0" text="Availability" />
+                <TableColumn prefWidth="214.0" text="Rate" />
+            </columns>
+        </TableView>
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/03/2021, 03:45:42 م
+    Author     : yoooo
+*/
+.my-button {
+    -fx-background-color:#FF5E36 ;  
+}
+
+.board {
+    -fx-background-color: radial-gradient(focus-distance -45% , center 0% 50% , radius 100% , ccc5c1, black);
+}
+
+.board-inside {
+    -fx-background-color: rgba(204,51,0,0.58);
+    -fx-background-radius: 5;
+}
+
+.my-text-field {
+    -fx-opacity: 1;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.board-inside .input-line, .board-inside .input-focused-line{
+    -fx-pref-height:3;
+}
+.current {
+    -fx-background-color: rgba(255,80,0,0.3);
+}
+.menu-button:hover {
+    -fx-background-color: rgba(255,138,102,0.3);
+}
+
+
+
+
+.my-table .column-header-background .nested-column-header .table-column, .my-table .column-header-background .filler {
+    -fx-background-color: #ff5e36;
+}
+
+.my-table .column-header-background .label{
+    -fx-text-fill: white;
+}
+
+.my-table .table-row-cell{
+    -fx-cell-size: 70px;
+    -fx-padding: 15px 0px;
+}

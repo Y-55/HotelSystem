@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="950.0" spacing="10.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelsystem2.FXMLReservationController">
+   <children>
+      <JFXButton prefHeight="50.0" prefWidth="250.0" styleClass="my-button" text="Retrive" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <JFXDatePicker promptText="Check in" />
+            <JFXDatePicker promptText="Check out" />
+            <JFXComboBox promptText="Room Rate" />
+            <JFXComboBox promptText="Payment" />
+            <JFXButton prefHeight="40.0" prefWidth="155.0" styleClass="my-button" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <TableView prefHeight="321.0" prefWidth="834.0">
+         <columns>
+            <TableColumn prefWidth="110.0" text="Rservation ID" />
+            <TableColumn prefWidth="77.0" text="Check in" />
+            <TableColumn prefWidth="78.0" text="check out" />
+            <TableColumn prefWidth="99.0" text="Room Rate" />
+            <TableColumn prefWidth="75.0" text="Payment" />
+         </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>
